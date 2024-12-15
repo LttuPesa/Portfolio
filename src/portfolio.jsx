@@ -43,7 +43,7 @@ const Portfolio = () => {
   
   // New states for enhanced features
   const [textIndex, setTextIndex] = useState(0);
-  const roles = ["Frontend Developer", "UI/UX Enthusiast", "React Specialist", "Web Artist"];
+  const roles = ["Frontend Developer", "Create beautiful websites", "coding is my hobby", "Friendly"];
   const [displayText, setDisplayText] = useState(roles[0]);
   const [isTyping, setIsTyping] = useState(true);
   const [particles, setParticles] = useState([]);
@@ -61,15 +61,15 @@ const Portfolio = () => {
     {
       title: "Meme Center App",
       description: "Creating a Website that Contains Memes",
-      tags: ["React", "Redux", "Firebase"],
+      tags: ["React", "API", "Firebase"],
       link: "#",
       icon: <Layout className="w-12 h-12 text-purple-600" />,
       color: "from-purple-400 to-pink-600"
     },
     {
-      title: "The Predicted Demise of Apps",
-      description: "Creating a Prediction of Mortality Using Web and Machine Learning",
-      tags: ["TensorFlow", "Python", "Machine Learning"],
+      title: "Admin Dashboard",
+      description: "Creating a Admin dashboard",
+      tags: ["HTML", "CSS", "Javascript"],
       link: "#",
       icon: <Code className="w-12 h-12 text-indigo-600" />,
       color: "from-green-400 to-cyan-600"
@@ -81,12 +81,9 @@ const Portfolio = () => {
     { name: "React", level: 85, color: "from-cyan-400 to-blue-600" },
     { name: "Node.js", level: 80, color: "from-green-400 to-green-600" },
     { name: "Python", level: 75, color: "from-blue-400 to-indigo-600" },
-    { name: "SQL", level: 85, color: "from-orange-400 to-red-600" },
     { name: "HTML5", level: 95, color: "from-red-400 to-red-600" },
     { name: "CSS3", level: 90, color: "from-blue-400 to-blue-600" },
-    { name: "Git", level: 85, color: "from-gray-400 to-gray-600" },
-    { name: "AWS", level: 70, color: "from-orange-400 to-yellow-600" },
-    { name: "Docker", level: 75, color: "from-blue-400 to-blue-600" }
+    { name: "Git", level: 85, color: "from-gray-400 to-gray-600" }
   ];
 
   // Function to generate random particles
@@ -288,7 +285,7 @@ const Portfolio = () => {
                  onMouseLeave={() => setShowQuote(false)}>
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full blur-3xl opacity-30 group-hover:opacity-40 transition-opacity" />
               <img 
-                src="/yesus ngaji.jpg"
+                src="/Asep.game.jpg"
                 alt="Muhammad Asep Ramdani"
                 className="relative w-48 h-48 mx-auto rounded-full object-cover border-4 border-white shadow-2xl transform transition-all duration-500 group-hover:scale-105 group-hover:rotate-6"
               />
@@ -296,7 +293,7 @@ const Portfolio = () => {
               <div className={`absolute -right-4 -top-4 bg-white p-2 rounded-lg shadow-xl transform transition-all duration-300 ${
                 showQuote ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
               }`}>
-                <span className="text-sm font-medium text-indigo-600">Hello there! 👋</span>
+                <span className="text-sm font-medium text-indigo-600">Welcome! 👋</span>
               </div>
             </div>
             
